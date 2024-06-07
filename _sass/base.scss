@@ -31,8 +31,9 @@ body {
 
 .ascii {
    font-family:monospace;
-   font-size: 3.2vw;
+   font-size: 10pt;
    width: max-content;
+   max-width: 90%;
    margin: 0 auto;
    border: 1px solid black;
 }
