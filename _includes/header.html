@@ -4,7 +4,8 @@
     {% assign owner_first_name = site.owner | split: " " %}
     <h1>{{ owner_first_name[0] | downcase }}@home:~$</h1>
     </a>
-    <pre>#
+    <div class="container">
+      <pre>
 
  _____                  _           ______              _            _          
 (____ \                | |         / _____)     _      | |          | |         
@@ -14,7 +15,8 @@
 |_____/ \_||_|_| |_|\____|\__  |   \______)_||_|\___)  |_______)_||_|____/(___/ 
                          (____/                                                 
 
-    #</pre>
+      </pre>
+    </div>
     <div class="header-links">
       {% include links.html %}
     </div>
