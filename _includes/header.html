@@ -4,9 +4,8 @@
     {% assign owner_first_name = site.owner | split: " " %}
     <h1>{{ owner_first_name[0] | downcase }}@home:~$</h1>
     </a>
-    <div class="container">
-      <pre>
-
+    <div class="ascii">
+      <pre role="img" aria-label="ASCII BRAND NAME">
  _____                  _           ______              _            _          
 (____ \                | |         / _____)     _      | |          | |         
  _   \ \ ____ ____   _ | |_   _   | /      ____| |_    | |      ____| | _   ___ 
@@ -14,8 +13,10 @@
 | |__/ ( ( | | | | ( (_| | |_| |  | \____( ( | | |__   | |____( ( | | |_) )___ |
 |_____/ \_||_|_| |_|\____|\__  |   \______)_||_|\___)  |_______)_||_|____/(___/ 
                          (____/                                                 
-
       </pre>
+      <figcaption id="brand-caption">
+        Dandy Cat Labs illustrated using preformatted text characters
+      </figcaption>
     </div>
     <div class="header-links">
       {% include links.html %}
