@@ -3,14 +3,7 @@
 {% include head.html %}
 
 <body>
-  <div id="wrapper">
-    {% include header.html %}
-    <div class="container">
-      <section id="main_content">
-        {{ content }}
-      </section>
-    </div>
-  </div>
+
 
   {% if paginator.total_pages > 1 %}
   <div class="pagination">
