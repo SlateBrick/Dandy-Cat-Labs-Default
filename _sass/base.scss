@@ -171,21 +171,13 @@ code.highlighter-rouge {
   border-radius: 2px;
 }
 
-table {
+table, th, td {
   width: 100%;
   margin: 0 0 20px 0;
+  text-align: left;
   border-collapse: collapse;
   border: 2px solid $header;
-}
-
-th {
-  text-align: left;
   padding: 5px 10px;
-}
-
-td {
-  padding: 5px 10px;
-  border: 2px solid;
 }
 
 hr {
