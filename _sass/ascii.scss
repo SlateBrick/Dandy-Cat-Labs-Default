@@ -11,7 +11,7 @@
 
 .ascii-item { grid-area: ascii; }
 
-.ascii-container > pre {
+.ascii-container > div {
   display: grid;
   justify-content: center;
   align-content: center;
