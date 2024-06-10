@@ -4,7 +4,6 @@
 
 @import "rouge-base16-dark";
 @import "default_colors";
-@import "ascii";
 
 $body-background: $cod-grey !default;
 $body-foreground: $gallery !default;
@@ -30,6 +29,18 @@ body {
   margin: 0 auto;
 }
 
+.ascii {
+
+  min-height: content;
+  max-width: content;
+  white-space: pre;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin: 0pk; border: 1px solid black;
+  font-size: max(0.2rem, 1vmin);
+  font-family:courier;
+  overflow: auto;
 
 
 section {
