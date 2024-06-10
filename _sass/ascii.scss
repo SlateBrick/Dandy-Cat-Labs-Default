@@ -7,8 +7,6 @@
   grid-template-rows: minmax(2.5rem, 12vmin) 1fr 5rem;
   grid-template-areas: "art art";
   min-height: 100vh;
-  white-space: pre;
-  margin: 5px; border: 1px solid black;
 }
 
 
@@ -18,6 +16,8 @@
   align-content: center;
   text-align: center;
   font-size: max(0.2rem, 1vmin);
+  white-space: pre;
+  margin: 5px; border: 1px solid black;
 }
 
 @media only screen and (max-device-width: 700px) {
