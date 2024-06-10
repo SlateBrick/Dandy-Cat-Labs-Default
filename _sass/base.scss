@@ -30,7 +30,8 @@ body {
 }
 
 .ascii {
-
+  display: block;
+  margin: 0 auto;
   min-height: content;
   max-width: content;
   white-space: pre;
