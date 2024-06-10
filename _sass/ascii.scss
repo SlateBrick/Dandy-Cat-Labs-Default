@@ -1,18 +1,18 @@
 
+.ascii-art-1 {  grid-area: art; }
 
-.ascii-container{
+.ascii {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: minmax(2.5rem, 12vmin) 1fr 5rem;
-  grid-template-areas: 
-    "ascii"
+  grid-template-areas: "art art";
   min-height: 100vh;
   white-space: pre;
 }
 
-.ascii-item { grid-area: ascii; }
 
-.ascii-container > div {
+.ascii pre {
+  display: grid;
   justify-content: center;
   align-content: center;
   text-align: center;
@@ -20,10 +20,10 @@
 }
 
 @media only screen and (max-device-width: 700px) {
-  .ascii-container {
+  .ascii {
     grid-template-rows: 6rem auto 5rem;
   }
-  .ascii-item {
+  .ascii pre {
     font-size: 55%;
   }
 }
