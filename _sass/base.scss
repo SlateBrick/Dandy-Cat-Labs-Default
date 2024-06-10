@@ -31,14 +31,16 @@ body {
 
 .ascii {
   display: block;
-  margin: 0 auto;
+
   min-height: content;
   max-width: max-content;
   white-space: pre;
   justify-content: center;
   align-content: center;
   text-align: center;
-  margin: 0pk; border: 1px solid white;
+  
+  margin: 0 auto;
+  border: 1px solid white;
   background: black;
   color: $header;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
@@ -47,7 +49,6 @@ body {
   font-size: max(0.2rem, 1vmin);
   font-family:courier;
   overflow: auto;
-}
 
 section {
   display: block;
