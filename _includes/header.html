@@ -1,7 +1,11 @@
 <link href="ascii.css" rel=stylesheet>
 
 <header>
-   <div class="ascii" role="img" aria-label="ASCII BRAND NAME" href="{{ "/" | prepend: site.baseurl | replace: '//', '/' }}">
+   <div>
+    <a href="{{ "/" | prepend: site.baseurl | replace: '//', '/' }}">
+    {% assign owner_first_name = site.owner | split: " " %}
+    <h1>{{ owner_first_name[0] | downcase }}@home:~$</h1>
+    <div class="ascii" role="img" aria-label="ASCII BRAND NAME">
 oooooooooo.                               .o8                     .oooooo.                 .        ooooo                   .o8                
 `888'   `Y8b                             "888                    d8P'  `Y8b              .o8        `888'                  "888                
  888      888  .oooo.   ooo. .oo.    .oooo888  oooo    ooo      888           .oooo.   .o888oo       888          .oooo.    888oooo.   .oooo.o 
@@ -11,11 +15,7 @@ oooooooooo.                               .o8                     .oooooo.      
 o888bood8P'   `Y888""8o o888o o888o `Y8bod88P"     .8'           `Y8bood8P'  `Y888""8o   "888"      o888ooooood8 `Y888""8o  `Y8bod8P' 8""888P' 
                                                .o..P'                                                                                          
                                                `Y8P'                                                                                           
-   </div>
-   <div>
-    <a href="{{ "/" | prepend: site.baseurl | replace: '//', '/' }}">
-    {% assign owner_first_name = site.owner | split: " " %}
-    <h1>{{ owner_first_name[0] | downcase }}@home:~$</h1>
+    </div>
     </a>
 
     <div class="header-links">
