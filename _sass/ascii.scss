@@ -2,7 +2,10 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: minmax(2.5rem, 12vmin) 1fr 5rem;
-  grid-template-areas: "header header" "footer footer";
+  grid-template-areas: 
+    "header header" 
+    "head head"
+    "footer footer";
   min-height: 100vh;
 }
 
