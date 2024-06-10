@@ -1,19 +1,17 @@
-body {
+
+
+.ascii-container{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: minmax(2.5rem, 12vmin) 1fr 5rem;
   grid-template-areas: 
-    "header header" 
-    "head head"
-    "footer footer";
+    "ascii"
   min-height: 100vh;
 }
 
-header {
-  grid-area: header;
-}
+.ascii-item { grid-area: ascii; }
 
-header pre {
+.ascii-container > pre {
   display: grid;
   justify-content: center;
   align-content: center;
@@ -22,10 +20,10 @@ header pre {
 }
 
 @media only screen and (max-device-width: 700px) {
-  body {
+  .ascii-container {
     grid-template-rows: 6rem auto 5rem;
   }
-  header {
+  .ascii-item {
     font-size: 55%;
   }
 }
