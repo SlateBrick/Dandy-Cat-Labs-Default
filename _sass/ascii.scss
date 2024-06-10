@@ -11,7 +11,7 @@
 }
 
 
-.ascii pre {
+.ascii div {
   display: grid;
   justify-content: center;
   align-content: center;
@@ -23,7 +23,7 @@
   .ascii {
     grid-template-rows: 6rem auto 5rem;
   }
-  .ascii pre {
+  .ascii div {
     font-size: 55%;
   }
 }
