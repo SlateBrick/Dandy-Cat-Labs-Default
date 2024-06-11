@@ -1,0 +1,31 @@
+
+.ascii-art-1 {  grid-area: art; }
+
+.ascii {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(2.5rem, 12vmin) 1fr 5rem;
+  grid-template-areas: "art art";
+  min-height: content;
+}
+
+
+.ascii pre {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-size: max(0.2rem, 1vmin);
+  max-width: content;
+  white-space: pre;
+  margin: 5px; border: 1px solid black;
+}
+
+@media only screen and (max-device-width: 700px) {
+  .ascii {
+    grid-template-rows: 6rem auto 5rem;
+  }
+  .ascii pre {
+    font-size: 55%;
+  }
+}

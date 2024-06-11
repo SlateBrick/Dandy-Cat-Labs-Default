@@ -30,14 +30,27 @@ body {
 }
 
 .ascii {
-   font-family:monospace;
-   font-size: 5pt;
-   width: max-content;
-   max-width: 90%;
-   white-space: pre;
-   margin: 0 auto;
-   border: 1px solid black;
+  display: block;
+
+  min-height: content;
+  max-width: max-content;
+  white-space: pre;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  
+  margin: 0 auto;
+  border: 1px solid $header;
+  background: black;
+  color: $header;
+  text-shadow: $header;
+  font-size: max(0.2rem, 1vmin);
+  font-family:courier;
+  overflow: auto;
+
 }
+
+
 
 section {
   display: block;
