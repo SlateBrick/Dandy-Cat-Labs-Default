@@ -3,4 +3,6 @@ layout: page
 title: About
 ---
 
-Something about me.
+Find me all over
+
+[instagram](https://www.instagram.com/dandycatlabs/)
